@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "661729567171",
+    "project_id": "bonkers-7efca",
+    "storage_bucket": "bonkers-7efca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661729567171:android:8350592a93373d9b325d76",
+        "android_client_info": {
+          "package_name": "com.example.bonkers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661729567171-742lg6e7cq85ukv74e8o6ucrjb1ankma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bonkers",
+            "certificate_hash": "93b554a6b47a13a1c4d4251713e717c8950193f7"
+          }
+        },
+        {
+          "client_id": "661729567171-sie1oakmauso1susq64qujof6gn1ngke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNV4SB9cKlrrqwNC-klQnDI2K1EElbLOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661729567171-sie1oakmauso1susq64qujof6gn1ngke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
