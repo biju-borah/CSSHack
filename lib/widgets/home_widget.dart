@@ -36,14 +36,22 @@ class _HomeWidgetState extends State<HomeWidget> {
     super.initState();
   }
 
-  fromgallery()async{
-     XFile? image=await ImagePicker().pickImage(source: ImageSource.gallery);
-     if (image != null) {
-        File imageFile = File(image.path);
-        await FirebaseStorage.instance.ref('/').putFile(imageFile);
+  fromgallery() async {
+    XFile? image = await ImagePicker().pickImage(source: ImageSource.gallery);
+    if (image != null) {
+      File imageFile = File(image.path);
+      await FirebaseStorage.instance.ref('/').putFile(imageFile);
     }
   }
-  fromcam()async{}
+
+  fromcam() async {
+    XFile? image = await ImagePicker().pickImage(source: ImageSource.camera);
+    if (image != null) {
+      File imageFile = File(image.path);
+      await FirebaseStorage.instance.ref('/').putFile(imageFile);
+    }
+  }
+
   showconfirm(BuildContext context) => showModalBottomSheet(
         context: context,
         builder: (BuildContext context) {
