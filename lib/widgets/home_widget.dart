@@ -56,6 +56,7 @@ class _HomeWidgetState extends State<HomeWidget> {
         context: context,
         builder: (BuildContext context) {
           return Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               GestureDetector(
                 onTap: () => fromgallery(),
@@ -142,10 +143,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                   padding: const EdgeInsets.all(12),
                   child: Center(
                     child: Container(
-                      height: 20,
+                      height: 70,
+                      width: 70,
                       decoration: BoxDecoration(
                         color: Colors.red,
-                        borderRadius: BorderRadius.circular(12),
+                        shape: BoxShape.circle,
                       ),
                     ),
                   ),
