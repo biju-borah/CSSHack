@@ -1,3 +1,5 @@
+import 'package:bonkers/widgets/feed_card.dart';
+import 'package:bonkers/widgets/feed_widget.dart';
 import 'package:bonkers/widgets/home_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -10,17 +12,11 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     HomeWidget(),
-    Text(
-      'Index 1: Feed',
-      style: optionStyle,
-    ),
+    FeedCard(),
     Text(
       'Index 2: Explore',
-      style: optionStyle,
     ),
   ];
 
