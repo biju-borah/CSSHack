@@ -469,7 +469,7 @@ def test_runner(constellation):
             plt.plot([x1, x2], [y1, y2], color='red')
     plt.savefig("C:\\Users\\heera\\OneDrive\\Documents\\GitHub\\CSSHack\\backend\\ML\\Predicted_images\\" +
                 true_label + " " + pred_label)
-    plt.close()
+    plt.close
 
     # print('--------------------'*2 , '\n' , score , pred_label)
     return pred_label
@@ -483,9 +483,8 @@ if __name__ == "__main__":
     for i in d:
         pred = test_runner(i)
         if (pred == i):
-            count += 1
+            print("True")
         else:
-            print(i, pred)
-    print(count / len(d))
+            print("False")
     cv2.waitKey(0)
     # test_runner('t')
